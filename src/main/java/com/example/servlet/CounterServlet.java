@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Counter extends HttpServlet {
+public class CounterServlet extends HttpServlet {
 
     private AtomicInteger count;
 
