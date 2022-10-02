@@ -5,11 +5,11 @@
 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
          version="2.4">
     <servlet>
-        <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>com.example.servlet.HelloServlet</servlet-class>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>com.example.servlet.Counter</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HelloServlet</servlet-name>
-        <url-pattern>/test</url-pattern>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/info</url-pattern>
     </servlet-mapping>
 </web-app>

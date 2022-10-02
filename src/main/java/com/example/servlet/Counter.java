@@ -8,9 +8,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class HelloServlet extends HttpServlet {
+public class Counter extends HttpServlet {
 
-    private AtomicInteger count = new AtomicInteger(0);
+    private AtomicInteger count;
+
+    @Override
+    public void init() throws ServletException {
+        count = new AtomicInteger(0);
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
